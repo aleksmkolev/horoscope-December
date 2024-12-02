@@ -3,21 +3,22 @@ function showImage(month) {
     var imagePopup = document.getElementById('image-popup');
     var image = imagePopup.querySelector('img');
     
-    // Add better error handling
+    // Define the image path
+    const imagePath = `./img/${month}.jpg`;  // Changed to relative path
+    
     image.onerror = function() {
-        console.error('Error loading image:', '/img/' + month + '.jpg');
-        alert('Unable to load image for ' + month);
+        console.error('Error loading image:', imagePath);
+        alert(`Unable to load image for ${month}. Please check if ${imagePath} exists.`);
     };
     
     image.onload = function() {
-        console.log('Image loaded successfully:', month);
+        console.log('Image loaded successfully:', imagePath);
         imagePopup.style.display = 'block';
         imagePopup.style.opacity = 1;
     };
     
-    // Log the full image path
-    console.log('Loading image from:', '/img/' + month + '.jpg');
-    image.src = window.location.origin + '/img/' + month + '.jpg';
+    console.log('Attempting to load image from:', imagePath);
+    image.src = imagePath;
 }
 
 function hidePopup() {
@@ -27,3 +28,6 @@ function hidePopup() {
         imagePopup.style.display = 'none';
     }, 500);
 }
+
+console.log('Current page URL:', window.location.href);
+console.log('Project root:', window.location.origin);
