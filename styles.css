@@ -290,20 +290,29 @@ header .logo
     .circle-container {
         width: 400px;
         height: 400px;
-        margin: 50px auto;
+        transform: scale(0.8);
     }
 
-    .small-circle {
-        width: 60px;
-        height: 60px;
+    .big-circle {
+        width: 300px;
+        height: 300px;
     }
 
-    .small-circle:nth-child(11) {
-        transform: translate(-50%, -50%) rotate(300deg) translate(200px) rotate(-300deg);
+    .btn {
+        width: 45px;
+        height: 45px;
+        font-size: 14px;
     }
-    
-    .small-circle:nth-child(12) {
-        transform: translate(-50%, -50%) rotate(330deg) translate(200px) rotate(-330deg);
+
+    .image-popup {
+        width: 95%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .image-popup img {
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -311,25 +320,20 @@ header .logo
     .circle-container {
         width: 300px;
         height: 300px;
-        margin: 30px auto;
+        transform: scale(0.6);
     }
 
-    .small-circle:nth-child(11) {
-        transform: translate(-50%, -50%) rotate(300deg) translate(150px) rotate(-300deg);
+    .showcase {
+        padding: 20px;
     }
-    
-    .small-circle:nth-child(12) {
-        transform: translate(-50%, -50%) rotate(330deg) translate(150px) rotate(-330deg);
-    }
-}
 
-@media (hover: none) {
-    .small-circle {
-        padding: 10px;
+    header {
+        padding: 10px 20px;
     }
-    
+
     .btn {
-        min-width: 44px;
-        min-height: 44px;
+        width: 40px;
+        height: 40px;
+        font-size: 12px;
     }
 }
