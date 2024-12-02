@@ -290,29 +290,17 @@ header .logo
     .circle-container {
         width: 400px;
         height: 400px;
-        transform: scale(0.8);
+        margin: 50px auto;
     }
 
-    .big-circle {
-        width: 300px;
-        height: 300px;
+    .small-circle {
+        width: 60px;
+        height: 60px;
     }
 
-    .btn {
-        width: 45px;
-        height: 45px;
-        font-size: 14px;
-    }
-
-    .image-popup {
-        width: 95%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .image-popup img {
-        width: 100%;
-        height: auto;
+    .small-circle:nth-child(11),
+    .small-circle:nth-child(12) {
+        transform: translate(-50%, -50%) rotate(300deg) translate(200px) rotate(-300deg);
     }
 }
 
@@ -320,20 +308,22 @@ header .logo
     .circle-container {
         width: 300px;
         height: 300px;
-        transform: scale(0.6);
+        margin: 30px auto;
     }
 
-    .showcase {
-        padding: 20px;
+    .small-circle:nth-child(11),
+    .small-circle:nth-child(12) {
+        transform: translate(-50%, -50%) rotate(300deg) translate(150px) rotate(-300deg);
     }
+}
 
-    header {
-        padding: 10px 20px;
+@media (hover: none) {
+    .small-circle {
+        padding: 10px;
     }
-
+    
     .btn {
-        width: 40px;
-        height: 40px;
-        font-size: 12px;
+        min-width: 44px;
+        min-height: 44px;
     }
 }
