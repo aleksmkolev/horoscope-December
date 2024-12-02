@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Months of Stella</title>
+  </head>
+  <body>
+    <!-- Video Source -->
+
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Stella's Months</h2>
+      </header>
+      <video src="nightsky.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
+      <div class="circle-container">
+        <div class="big-circle">
+          <div class="small-circle" id="january">
+            <button class="btn" onclick="showImage('jun')">Jan</button>
+          </div>
+          <div class="small-circle" id="february">
+            <button class="btn" onclick="showImage('feb')">Feb</button>
+          </div>
+          <div class="small-circle" id="march">
+            <button class="btn" onclick="showImage('mar')">Mar</button>
+          </div>
+          <div class="small-circle" id="april">
+            <button class="btn" onclick="showImage('apr')">Apr</button>
+          </div>
+          <div class="small-circle" id="may">
+            <button class="btn" onclick="showImage('may')" >May</button>
+          </div>
+          <div class="small-circle" id="june">
+            <button class="btn"onclick="showImage('jun')" >Jun</button>
+          </div>
+          <div class="small-circle" id="july">
+            <button class="btn" onclick="showImage('jul')" >Jul</button>
+          </div>
+          <div class="small-circle" id="august">
+            <button class="btn" onclick="showImage('aug')">Aug</button>
+          </div>
+          <div class="small-circle" id="sept">
+            <button class="btn" onclick="showImage('sept')" >Sept</button>
+          </div>
+          <div class="small-circle" id="october">
+            <button class="btn" onclick="showImage('oct')">Oct</button>
+          </div>
+
+          <div class="small-circle" id="november">
+            <button class="btn" onclick="showImage('nov')">Nov</button>
+          </div>
+          <div class="small-circle" id="december">
+            <button class="btn" onclick="showImage('dec')">Dec</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-popup" id="image-popup">
+		<img src="" alt="">
+		<button class="btn" onclick="hidePopup()">Back</button>
+	</div>
+        <script>
+          
+
+          function hidePopup() {
+            document.getElementById("image-popup").style.display = "none";
+          }
+        </script>
+      </div>
+    </section>
+  </body>
+</html>
