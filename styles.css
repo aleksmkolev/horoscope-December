@@ -298,9 +298,12 @@ header .logo
         height: 60px;
     }
 
-    .small-circle:nth-child(11),
-    .small-circle:nth-child(12) {
+    .small-circle:nth-child(11) {
         transform: translate(-50%, -50%) rotate(300deg) translate(200px) rotate(-300deg);
+    }
+    
+    .small-circle:nth-child(12) {
+        transform: translate(-50%, -50%) rotate(330deg) translate(200px) rotate(-330deg);
     }
 }
 
@@ -311,9 +314,12 @@ header .logo
         margin: 30px auto;
     }
 
-    .small-circle:nth-child(11),
-    .small-circle:nth-child(12) {
+    .small-circle:nth-child(11) {
         transform: translate(-50%, -50%) rotate(300deg) translate(150px) rotate(-300deg);
+    }
+    
+    .small-circle:nth-child(12) {
+        transform: translate(-50%, -50%) rotate(330deg) translate(150px) rotate(-330deg);
     }
 }
 
